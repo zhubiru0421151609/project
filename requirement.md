@@ -138,6 +138,18 @@
 
 # 用例图及流程图
 ## 用例图
-![avatar](http://thyrsi.com/t6/367/1536228936x-1566688347.png)
-![avatar](http://thyrsi.com/t6/367/1536229023x1822611359.png)
+![avatar](http://pic.caigoubao.cc/607254/yonglitu.png)
 ## 流程图
+### 1 注册
+![avatar](http://pic.caigoubao.cc/607254/1zhuce.png)
+### 2 登录
+![avatar](http://pic.caigoubao.cc/607254/2denglu.png)
+### 3 查看用户信息
+![avatar](http://pic.caigoubao.cc/607254/3chakanyonghuxinxi.png)
+### 4 修改用户信息
+![avatar](http://pic.caigoubao.cc/607254/4xiugaiyonghuxinxi.png)
+### 5 求助
+![avatar](http://pic.caigoubao.cc/607254/5qiuzhu.png)
+### 6 提供帮助
+![avatar](http://pic.caigoubao.cc/607254/6tigongbangzhu.png)
+=======
