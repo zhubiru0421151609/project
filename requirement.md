@@ -97,4 +97,6 @@
 
 # 用例图及流程图
 ## 用例图
+![avatar](http://thyrsi.com/t6/367/1536228936x-1566688347.png)
+![avatar](http://thyrsi.com/t6/367/1536229023x1822611359.png)
 ## 流程图
