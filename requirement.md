@@ -145,15 +145,15 @@
 ![avatar](http://i1.bvimg.com/661398/8e022b13ba0a7d3a.png)
 ## 流程图
 ### 1 注册
-![avatar](http://pic.caigoubao.cc/607254/1zhuce.png)
+![avatar](http://i1.bvimg.com/661398/da5cf10869eed62f.png)
 ### 2 登录
-![avatar](http://pic.caigoubao.cc/607254/2denglu.png)
+![avatar](http://i1.bvimg.com/661398/c52709d727505fd2.png)
 ### 3 查看用户信息
-![avatar](http://pic.caigoubao.cc/607254/3chakanyonghuxinxi.png)
+![avatar](http://i1.bvimg.com/661398/50ebe272b867e08c.png)
 ### 4 修改用户信息
-![avatar](http://pic.caigoubao.cc/607254/4xiugaiyonghuxinxi.png)
+![avatar](http://i1.bvimg.com/661398/27a845195eaa98a1.png)
 ### 5 求助
-![avatar](http://pic.caigoubao.cc/607254/5qiuzhu.png)
+![avatar](http://i1.bvimg.com/661398/d748f2a0e2fed042.png)
 ### 6 提供帮助
-![avatar](http://pic.caigoubao.cc/607254/6tigongbangzhu.png)
+![avatar](http://i1.bvimg.com/661398/d7f734e2d986b178.png)
 =======
