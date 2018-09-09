@@ -152,8 +152,10 @@
 ![avatar](http://i1.bvimg.com/661398/50ebe272b867e08c.png)
 ### 4 修改用户信息
 ![avatar](http://i1.bvimg.com/661398/27a845195eaa98a1.png)
-### 5 求助
+### 5 购买会员
 ![avatar](http://i1.bvimg.com/661398/d748f2a0e2fed042.png)
-### 6 提供帮助
+### 6 求助
 ![avatar](http://i1.bvimg.com/661398/d7f734e2d986b178.png)
+### 7 提供帮助
+![avatar](http://i1.bvimg.com/661398/bb79fb557c82a9dc.png)
 =======
