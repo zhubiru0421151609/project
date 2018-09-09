@@ -142,7 +142,7 @@
 
 # 用例图及流程图
 ## 用例图
-![avatar](http://pic.caigoubao.cc/607254/yonglitu.png)
+![avatar](http://i1.bvimg.com/661398/8e022b13ba0a7d3a.png)
 ## 流程图
 ### 1 注册
 ![avatar](http://pic.caigoubao.cc/607254/1zhuce.png)
