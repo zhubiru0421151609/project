@@ -16,15 +16,15 @@
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/%E5%B1%82%E6%AC%A1%E5%9B%BE.jpg)
 
 ## 模块的调用关系与模块接口
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO9.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO8.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO1.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO2.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO3.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO4.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO6.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO7.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO5.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO9.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO8.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO1.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO2.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO3.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO4.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO6.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO7.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO5.png)
 
 # 模块功能
 
@@ -97,6 +97,3 @@
 ## 查找聊天室
 
 聊天室非常多，因此需要快速找到所需要的聊天室，此处通过Hash实现查找聊天室，所有聊天室有个独立id，把id作为key来进行查找。
-
-=======
-
