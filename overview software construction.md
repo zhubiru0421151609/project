@@ -8,22 +8,16 @@
 
 ![avatar](http://i1.bvimg.com/661398/8e022b13ba0a7d3a.png)
 
-
-# 接口设计
-
-## 外部接口
-
-## 内部接口
-
-## 用户接口
-
 # 模块划分
 
 本平台具体的功能模块主要有：注册登录模块、用户模块、后台管理模块（用户信息记录）、充值模块。
 
 ## 模块的层次结构
+![avatar](https://github.com/wenxin0421151623/project/blob/master/%E5%B1%82%E6%AC%A1%E5%9B%BE.jpg)
 
 ## 模块的调用关系与模块接口
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO9.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO8.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO1.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO2.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO3.png)
@@ -31,8 +25,6 @@
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO5.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO6.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO7.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO8.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO9.png)
 
 # 模块功能
 
@@ -107,7 +99,5 @@
 聊天室非常多，因此需要快速找到所需要的聊天室，此处通过Hash实现查找聊天室，所有聊天室有个独立id，把id作为key来进行查找。
 
 # 数据库结构设计
-
-# 人机界面设计
 =======
 
