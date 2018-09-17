@@ -23,9 +23,16 @@
 
 ## 模块的层次结构
 
-## 模块的调用关系
-
-## 模块接口
+## 模块的调用关系与模块接口
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO1.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO2.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO3.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO4.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO5.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO6.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO7.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO8.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO9.png)
 
 # 模块功能
 
