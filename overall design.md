@@ -13,7 +13,7 @@
 本平台具体的功能模块主要有：注册登录模块、用户模块、后台管理模块（用户信息记录）、充值模块。
 
 ## 模块的层次结构
-![avatar](https://github.com/wenxin0421151623/project/blob/master/%E5%B1%82%E6%AC%A1%E5%9B%BE.jpg)
+![avatar](http://thyrsi.com/t6/372/1537198649x-1566679983.jpg)
 
 ## 模块的调用关系与模块接口
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/IPO9.png)
