@@ -22,9 +22,9 @@
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO2.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO3.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO4.png)
-![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO5.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO6.png)
 ![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO7.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/IPO5.png)
 
 # 模块功能
 
@@ -97,7 +97,5 @@
 ## 查找聊天室
 
 聊天室非常多，因此需要快速找到所需要的聊天室，此处通过Hash实现查找聊天室，所有聊天室有个独立id，把id作为key来进行查找。
-
-# 数据库结构设计
 =======
 
