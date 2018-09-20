@@ -97,3 +97,19 @@
 ## 查找聊天室
 
 聊天室非常多，因此需要快速找到所需要的聊天室，此处通过Hash实现查找聊天室，所有聊天室有个独立id，把id作为key来进行查找。
+# UML类图及代码设计
+
+global_information:
+
+chattingroom chattingroomlist[MAX];
+
+
+
+fuction_body of some functions in UML diagram:
+
+Register_User::ModifyUserInfo():void
+{
+     basicinfo->set(...);
+
+}
+
