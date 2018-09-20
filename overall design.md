@@ -102,7 +102,8 @@
 global_information:
 
 chattingroom chattingroomlist[MAX1];
-entrustList entrustinfo[MAX2];
+entrustinfo entrustList[MAX2];
+User UserList[MAX3];
 
 
 fuction_body of some functions in UML diagram:
@@ -112,4 +113,9 @@ Register_User::ModifyUserInfo():void
      basicinfo->set(...);
 
 }
+http://thyrsi.com/t6/373/1537450282x-1566679839.png
+
+http://thyrsi.com/t6/373/1537450320x-1566679839.png
+
+http://thyrsi.com/t6/373/1537450345x-1566679839.png
 
