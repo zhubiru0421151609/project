@@ -101,8 +101,8 @@
 
 global_information:
 
-chattingroom chattingroomlist[MAX];
-
+chattingroom chattingroomlist[MAX1];
+entrustList entrustinfo[MAX2];
 
 
 fuction_body of some functions in UML diagram:
