@@ -113,9 +113,10 @@ Register_User::ModifyUserInfo():void
      basicinfo->set(...);
 
 }
-http://thyrsi.com/t6/373/1537450282x-1566679839.png
+![avatar](http://thyrsi.com/t6/373/1537450282x-1566679839.png)
 
-http://thyrsi.com/t6/373/1537450320x-1566679839.png
+![avatar](http://thyrsi.com/t6/373/1537450320x-1566679839.png)
 
-http://thyrsi.com/t6/373/1537450345x-1566679839.png
+![avatar](http://thyrsi.com/t6/373/1537450345x-1566679839.png)
+
 
