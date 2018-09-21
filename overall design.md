@@ -119,4 +119,17 @@ Register_User::ModifyUserInfo():void
 
 ![avatar](http://thyrsi.com/t6/373/1537450345x-1566679839.png)
 
+# UI interface
+
+![avatar](http://thyrsi.com/t6/373/1537490330x-1566679485.png)
+
+![avatar](http://thyrsi.com/t6/373/1537490422x-1566680256.png)
+
+![avatar](http://thyrsi.com/t6/373/1537490497x-1566679983.png)
+
+![avatar](http://thyrsi.com/t6/373/1537490497x-1566679983.png)
+
+![avatar](http://thyrsi.com/t6/373/1537490577x-1566679869.png)
+
+
 
