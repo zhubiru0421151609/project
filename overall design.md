@@ -125,7 +125,7 @@ Register_User::ModifyUserInfo():void
 
 ![avatar](http://thyrsi.com/t6/373/1537490422x-1566680256.png)
 
-![avatar](http://thyrsi.com/t6/373/1537490497x-1566679983.png)
+![avatar](http://thyrsi.com/t6/373/1537490666x-1566680214.png)
 
 ![avatar](http://thyrsi.com/t6/373/1537490497x-1566679983.png)
 
