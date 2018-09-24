@@ -10,7 +10,7 @@ public:
     RegisteredUser();
     EntrustInfo ViewEntrustInfo();
     void ModifyUserInfo();
-    void Verify(string name, int id, Picture IDCard);
+    void Verify(string name, string id, Picture IDCard);
 };
 
 #endif
