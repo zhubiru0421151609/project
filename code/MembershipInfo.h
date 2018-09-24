@@ -9,6 +9,6 @@ public:
     int type;
     MembershipInfo get();
     void set(int time, int type);
-}
+};
 
 #endif
