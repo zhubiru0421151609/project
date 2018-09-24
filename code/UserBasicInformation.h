@@ -14,6 +14,8 @@ public:
     UserBasicInformation get();
     UserBasicInformation();
     UserBasicInformation(string name, string pwd, string mail, string tele, string gen, string nation, string age);
+    void setIdCardNumber(int id);
+    void setLanguage(string native, string interested);
 private:
     string password;
     string mailbox;
