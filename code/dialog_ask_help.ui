@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog_ask_help</class>
+ <widget class="QDialog" name="dialog_ask_help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);
+background-color: rgb(170, 255, 127);</string>
+  </property>
+  <widget class="QLabel" name="WELCOME">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;
+font: italic 18pt &quot;Harlow Solid Italic&quot;;
+font: 18pt &quot;Segoe Script&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ASK FOR HELP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>130</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>     Title/主题</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="username">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>140</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Agency FB&quot;;
+font: 9pt &quot;Calibri&quot;;
+font: 12pt &quot;Fixedsys&quot;;</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Fixedsys'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;Please input a brief title &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>180</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Description/描述</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>180</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Agency FB&quot;;
+font: 9pt &quot;Calibri&quot;;
+font: 12pt &quot;Fixedsys&quot;;</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Fixedsys'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;Please descript your problem within 300 words&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>270</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Agency FB&quot;;
+font: 9pt &quot;Calibri&quot;;
+font: 12pt &quot;Fixedsys&quot;;</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Fixedsys'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt;Which is helpers' required gender?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>220</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Need_age/回答者年龄</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Need_gender/回答者性别</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="username_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>310</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 9pt &quot;Agency FB&quot;;
+font: 9pt &quot;Calibri&quot;;
+font: 12pt &quot;Fixedsys&quot;;</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Fixedsys'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;What is helpers' required profession?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Need_profession/回答者职业</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="USERNAME_6">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>340</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Self_level/求助者等级</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WELCOME_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>80</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;
+font: italic 18pt &quot;Harlow Solid Italic&quot;;
+font: 18pt &quot;Segoe Script&quot;;</string>
+   </property>
+   <property name="text">
+    <string>求助</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>230</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>240</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>to</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>230</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>240</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>from</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>350</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>USERNAME_3</zorder>
+  <zorder>username</zorder>
+  <zorder>textEdit_3</zorder>
+  <zorder>WELCOME</zorder>
+  <zorder>WELCOME_2</zorder>
+  <zorder>label</zorder>
+  <zorder>spinBox</zorder>
+  <zorder>USERNAME</zorder>
+  <zorder>USERNAME_6</zorder>
+  <zorder>USERNAME_4</zorder>
+  <zorder>USERNAME_2</zorder>
+  <zorder>textEdit_4</zorder>
+  <zorder>spinBox_3</zorder>
+  <zorder>spinBox_2</zorder>
+  <zorder>USERNAME_5</zorder>
+  <zorder>label_2</zorder>
+  <zorder>username_3</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
