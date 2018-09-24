@@ -11,6 +11,6 @@ void RegisteredUser::ModifyUserInfo(string name, string pwd, string mail, string
 void RegisteredUser::Verify(string name, string id, Picture IDCard) {
     if (checkImage(id, IDCard)) {
         this->realName = name;
-        this->UserBasicInformation.setID(id);
+        this->UserBasicInformation.setIdCardNumber(id);
     } else this->realName = "";
 };
