@@ -16,12 +16,12 @@ public:
     UserBasicInformation(string name, string pwd, string mail, string tele, string gen, string nation, string age);
     void setIdCardNumber(int id);
     void setLanguage(string native, string interested);
+    void set(string name, string pwd, string mail, string tele, string gen, string nation, string age);
 private:
     string password;
     string mailbox;
     string telephone;
     int id_card_number;
-    void set(string name, string pwd, string mail, string tele, string gen, string nation, string age);
 };
 
 #endif
