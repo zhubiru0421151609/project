@@ -11,8 +11,8 @@ void Visitor::ViewChattingRoomList() {
     for (auto room: ChattingRoomList) {
         view(room);
     }
-}
+};
 
 string Visitor::ViewRecommendation() {
     view(select(ChattingRoomList));
-}
+};
