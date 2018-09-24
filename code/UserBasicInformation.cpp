@@ -44,15 +44,11 @@ void UserBasicInformation::set(string name, string pwd, string mail, string tele
     this->id_card_number = "";
 };
 
-void UserBasicInformation::setIdCardNumber(int id) {
+void UserBasicInformation::setIdCardNumber(string id) {
     this->id_card_number = id;
 }
 
 void UserBasicInformation::setLanguage(string native, string interested) {
     this->native_language = native;
     this->interested_language = interested;
-}
-
-void UserBasicInformation::setID(string id) {
-    this->id_card_number = id;   
 }
