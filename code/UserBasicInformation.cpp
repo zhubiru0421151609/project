@@ -1,6 +1,3 @@
-#ifndef USER_BASIC_INFORMATION_CPP
-#define USER_BASIC_INFORMATION_CPP
-
 #include <string>
 #include "UserBasicInformation.h"
 
@@ -56,4 +53,3 @@ void UserBasicInformation::setLanguage(string native, string interested) {
     this->interested_language = interested;
 }
 
-#endif
