@@ -11,6 +11,6 @@ public:
     void askQuestions(string msg);
     void answerQuestions(string msg);
     void viewEntrustInfo();
-}
+};
 
 #endif
