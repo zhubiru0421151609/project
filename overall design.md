@@ -101,8 +101,12 @@
 # 数据流图
 
 ![avatar](http://thyrsi.com/t6/375/1537781356x-1404817844.png)
+             
+                          figure1
 
 ![avatar](http://thyrsi.com/t6/375/1537781379x-1404817844.png)
+   
+                          figure2
 
 # UML类图及代码设计
 
