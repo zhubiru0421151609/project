@@ -6,8 +6,8 @@
 
 class Visitor::public User {
 public:
-    void Visitor();
-    void ViewEntrustinfo();
+    Visitor();
+    void ViewEntrustInfo();
     void ViewChattingRoomList();
     string ViewRecommendation();
 };
