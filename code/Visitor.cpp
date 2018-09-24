@@ -2,17 +2,17 @@
 #include "Visitor.h"
 
 void Visitor::ViewEntrustInfo() {
-    for (auto EntrustInfo: EntrustInfos) {
-        view(EntrustInfo);
+    for (auto info: EntrustInfoList) {
+        view(info);
     }
 };
 
 void Visitor::ViewChattingRoomList() {
-    for (auto ChattingRoom: ChattingRooms) {
-        view(ChattingRoom);
+    for (auto room: ChattingRoomList) {
+        view(room);
     }
 }
 
 string Visitor::ViewRecommendation() {
-    view(select(ChattingRooms));
+    view(select(ChattingRoomList));
 }
