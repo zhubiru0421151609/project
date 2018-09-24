@@ -53,3 +53,6 @@ void UserBasicInformation::setLanguage(string native, string interested) {
     this->interested_language = interested;
 }
 
+void UserBasicInformation::setID(string id) {
+    this->id_card_number = id;   
+}
