@@ -14,6 +14,8 @@ public:
     void Login();
     void Register(UserBasicInformation information, int id);
     void Logout();
+private:
+    string realName;
 };
 
 #endif
