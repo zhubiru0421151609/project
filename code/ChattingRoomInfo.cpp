@@ -6,7 +6,7 @@ ChattingRoomInfo::ChattingRoomInfo() {
 };
 
 ChattingRoomInfo ChattingRoomInfo::get() {
-    return this;
+    return *this;
 };
 
 void ChattingRoomInfo::set(string topic, VIP u1, VIP u2) {
