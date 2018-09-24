@@ -97,6 +97,13 @@
 ## 查找聊天室
 
 聊天室非常多，因此需要快速找到所需要的聊天室，此处通过Hash实现查找聊天室，所有聊天室有个独立id，把id作为key来进行查找。
+
+# 数据流图
+
+![avatar](http://thyrsi.com/t6/375/1537781356x-1404817844.png)
+
+![avatar](http://thyrsi.com/t6/375/1537781379x-1404817844.png)
+
 # UML类图及代码设计
 
 global_information:
@@ -130,6 +137,9 @@ Register_User::ModifyUserInfo():void
 ![avatar](http://thyrsi.com/t6/373/1537490497x-1566679983.png)
 
 ![avatar](http://thyrsi.com/t6/373/1537490577x-1566679869.png)
+
+
+
 
 
 
