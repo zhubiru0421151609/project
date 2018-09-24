@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_buy_vip</class>
+ <widget class="QDialog" name="Dialog_buy_vip">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);
+background-color: rgb(170, 255, 127);</string>
+  </property>
+  <widget class="QLabel" name="WELCOME">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>70</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;
+font: italic 18pt &quot;Harlow Solid Italic&quot;;
+font: 18pt &quot;Segoe Script&quot;;</string>
+   </property>
+   <property name="text">
+    <string>BUY MEMBERSHIP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buy monthly membership/购买一月</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>250</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buy yearly membership/购买一年</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>300</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Recharge/不购会员</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WELCOME_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>120</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Eras Medium ITC&quot;;
+font: 75 9pt &quot;Agency FB&quot;;
+font: 12pt &quot;Eras Demi ITC&quot;;
+font: italic 18pt &quot;Harlow Solid Italic&quot;;
+font: 18pt &quot;Segoe Script&quot;;</string>
+   </property>
+   <property name="text">
+    <string>购买会员</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
