@@ -12,7 +12,7 @@ public:
     User();
     User(UserBasicInformation information, int id, int status);
     void Login();
-    void Register(UserBasicInformation information);
+    void Register(UserBasicInformation information, int id);
     void Logout();
 };
 
