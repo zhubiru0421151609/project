@@ -8,7 +8,7 @@ void RegisteredUser::ModifyUserInfo(string name, string pwd, string mail, string
     this->UserBasicInformation.set(string name, string pwd, string mail, string tele, string gen, string nation, string age);
 };
 
-void RegisteredUser::Verify(string name, int id, Picture IDCard) {
+void RegisteredUser::Verify(string name, string id, Picture IDCard) {
     if (checkImage(id, IDCard)) {
         this->realName = name;
         this->UserBasicInformation.setID(id);
