@@ -36,13 +36,13 @@
 
 注册界面用户输入相关信息注册信息，系统后台验证输入信息的合法性，如出现违规信息返回注册界面再次输入相关信息，若信息审核通过，提示用户注册成功，向数据库用户信息表中插入一条记录，并跳转至登录界面。
 
-![avatar](http://i1.bvimg.com/661398/da5cf10869eed62f.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/1zhuce.png)
 
 ### 用户登录
 
 用户注册成功后或用户访问网站首页，点击登录，跳转到登录页面。登录页面要求用户输入用户名，密码，以及验证码，用户提交信息后，系统索引数据库查询是否存在此用户。若否，则提示用户不存在；若存在则查询密码是否一致。若否，提示密码错误，并跳转至登录界面；若正确则提示登录成功，跳转至首页。
 
-![avatar](http://i1.bvimg.com/661398/c52709d727505fd2.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/2denglu.png)
 
 ## 用户模块
 
@@ -50,13 +50,13 @@
 
 用户进入个人信息界面后可以调用信息查询功能。系统根据用户的查询条件向数据库用户信息表提取相关信息如：头像、昵称、年龄等信息按照要求进行显示。
 
-![avatar](http://i1.bvimg.com/661398/50ebe272b867e08c.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/3chakanyonghuxinxi.png)
 
 ### 修改用户信息
 
 本模块用于用户信息如：基本信息、密码、绑定邮箱、手机等信息修改。用户输入相关信息实时验证合法性，合法提交信息，更新用户信息表。否则，修改无效。
 
-![avatar](http://i1.bvimg.com/661398/27a845195eaa98a1.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/4xiugaiyonghuxinxi.png)
 
 ### 查看一对一聊天室
 
@@ -66,7 +66,7 @@
 
 用户在发布委托信息界面输入委托信息，经验证合法性后插入委托信息表，如不合法，则返回再次输入。
 
-![avatar](http://i1.bvimg.com/661398/d7f734e2d986b178.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/6qiuzhu.png)
 
 ## 后台管理模块
 
@@ -82,7 +82,7 @@
 
 当用户使用需要充值才能进行的功能时，跳转至充值界面，并展示充值说明。用户选择具体的月费/年费后提交，待确认用户是否了解充值规则以及对充值金额进行确认后，如充值成功，向用户会员数据库插入一条数据，跳转至个人账户页面，显示当前剩余时间，否则返回充值页面。
 
-![avatar](http://i1.bvimg.com/661398/d748f2a0e2fed042.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/5goumaihuiyuan.png)
 # 数据结构设计
 
 ## 类
