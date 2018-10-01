@@ -6,7 +6,7 @@
 
 用户按照信息的完善程度分为：游客、注册用户和认证用户。游客注册登录成为注册用户，注册用户具有查看请求、查看和修改个人信息的功能，注册用户实名认证后成为认证用户。
 
-![avatar](http://i1.bvimg.com/661398/8e022b13ba0a7d3a.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/yonglituxin.png)
 
 # 模块划分
 
