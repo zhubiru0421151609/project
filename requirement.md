@@ -142,22 +142,22 @@
 
 # 用例图及流程图
 ## 用例图
-![avatar](http://i1.bvimg.com/661398/8e022b13ba0a7d3a.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/yonglituxin.png)
 ## 流程图
 ### 1 注册
-![avatar](http://i1.bvimg.com/661398/da5cf10869eed62f.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/1zhuce.png)
 ### 2 登录
-![avatar](http://i1.bvimg.com/661398/c52709d727505fd2.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/2denglu.png)
 ### 3 查看用户信息
-![avatar](http://i1.bvimg.com/661398/50ebe272b867e08c.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/3chakanyonghuxinxi.png)
 ### 4 修改用户信息
-![avatar](http://i1.bvimg.com/661398/27a845195eaa98a1.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/4xiugaiyonghuxinxi.png)
 ### 5 购买会员
-![avatar](http://i1.bvimg.com/661398/d748f2a0e2fed042.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/5goumaihuiyuan.png)
 ### 6 求助
-![avatar](http://i1.bvimg.com/661398/d7f734e2d986b178.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/6qiuzhu.png)
 ### 7 提供帮助
-![avatar](http://i1.bvimg.com/661398/bb79fb557c82a9dc.png)
+![avatar](https://github.com/wenxin0421151623/project/blob/master/pic/7tigongbangzhu.png)
 =======
 
 # 用户使用说明
