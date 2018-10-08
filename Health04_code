@@ -6,41 +6,40 @@ import base64
 import Tkinter
 from Tkinter import *
 import tkFileDialog
-
-#IMAGE_PATH = 'D:\\3.jpg'
-
 root = Tk()
 root.title('your unique nutrition suggestions')
-
 la = Label(root, text="see nutrition in your food tag", font=("Arial", 18), width=30, height=2)
 la.grid(row=0, column=0)
-# lb = Label(root, text="nutrition reference",font=("Arial", 24), width=50, height=2)
-# lb.grid(row=0,column=1)
-vars = StringVar()
-#vars.set(IMAGE_PATH)
-#text_input = Entry(root, textvariable=vars, width=20, font=("Arial", 12))
 text_input=Entry(root)
 text_input.grid(row=3, column=0)
-"""
-def select_file():
-    #filename = tkFileDialog.askopenfilename(initialdir='D:')
-    #IMAGE_PATH = filename
-    IMAGE_PATH = text_input.get()
-    vars.set(IMAGE_PATH)
-    return filename
-"""
 bt_file=Label(root, text="enter the image path",font=("Arial", 12), width=40, height=1)
-#bt_file = Button(root, text="select file", font=("Arial", 12), command=select_file)
 bt_file.grid(row=2, column=0)
 var = StringVar()
 l = Listbox(root, listvariable=var, width=50, height=20, font=("Arial", 12))
 l.grid(row=1, column=0)
+la1 = Label(root, text="enter your age:", font=("Arial", 15), width=40, height=1)
+la1.grid(row=0,column=1)
+entrytext1 = Entry(root)
+entrytext1.grid(row=1,column=1, padx=10, pady=5)
+la2 = Label(root, text="enter your gender:",font=("Arial", 15), width=40, height=1)
+la2.grid(row=2,column=1)
+entrytext2 = Entry(root)
+entrytext2.grid(row=3,column=1)
+lb3 = StringVar()
+la3 = Label(root, text="enter whether you are pregnant:",font=("Arial", 15), width=40, height=1)
+la3.grid(row=4,column=1)
+entrytext3 = Entry(root)
+entrytext3.grid(row=5,column=1)
+la3 = Label(root, text='recommended nutrition intake:',font=("Arial", 12), width=40, height=1)
+la3.grid(row=1,column=2)
+var2 = StringVar()
+l2 = Listbox(root, listvariable=var2, width=40, height=10, font=("Arial", 12))
+l2.grid(row=2, column=2)
 def ocr():
     IMAGE_PATH = text_input.get()
     f = open(IMAGE_PATH, 'rb')
     file_content = f.read()
     base64_image = base64.b64encode(file_content)
-
     host = 'https://ocrapi-ugc.taobao.com'
     path = '/ocrservice/ugc'
     method = 'POST'
@@ -48,7 +47,6 @@ def ocr():
     querys = ''
     bodys = {}
     url = host + path
-
     post_data = json.dumps({'img': base64_image, 'prob': "false"})
     request = urllib2.Request(url, post_data)
     request.add_header('Authorization', 'APPCODE ' + appcode)
@@ -60,8 +58,6 @@ def ocr():
     content = response.read()
     if (content):
         return content
-
-
 def show_ocr_result():
     result = json.loads(ocr())
     for r in result['prism_wordsInfo']:
@@ -90,20 +86,6 @@ food = {
     "zinc": {"day": "mg", "child": [[12, 28], [12, 28]], "teenager": [[18, 43], [15, 35]],
              "adult": [[15, 45], [11.5, 37]], "elderly": [[11.5, 37], [11.5, 37]], "pregnant": [16.5, 35]}
 }
-lb1=StringVar()
-la1 = Label(root, text="enter your age:", font=("Arial", 15), width=40, height=1)
-la1.grid(row=0,column=1)
-entrytext1 = Entry(root)
-entrytext1.grid(row=1,column=1, padx=10, pady=5)
-la2 = Label(root, text="enter your gender:",font=("Arial", 15), width=40, height=1)
-la2.grid(row=2,column=1)
-entrytext2 = Entry(root)
-entrytext2.grid(row=3,column=1)
-lb3 = StringVar()
-la3 = Label(root, text="enter whether you are pregnant:",font=("Arial", 15), width=40, height=1)
-la3.grid(row=4,column=1)
-entrytext3 = Entry(root)
-entrytext3.grid(row=5,column=1)
 def show_recommendation():
     age = int(entrytext1.get())
     sex = entrytext2.get()
@@ -121,14 +103,6 @@ def show_recommendation():
     else:
         print('age is error!')
         sys.exit()
-
-    lb3 = StringVar()
-    lb3.set('recommended nutrition intake:')
-    la3 = Label(root, textvariable=lb3,font=("Arial", 12), width=40, height=1)
-    la3.grid(row=1,column=2)
-    var2 = StringVar()
-    l2 = Listbox(root, listvariable=var2, width=40, height=10, font=("Arial", 12))
-    l2.grid(row=2, column=2)
     if(cmp(sex,"woman")==0):
         sextype=1
     elif(cmp(sex,"man")==0):
@@ -232,7 +206,6 @@ def show_recommendation():
     c = zinc_high
     d = food['zinc']['day']
     l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-
 button=Button(root,text="see recommendations", font=("Arial", 12),command=show_recommendation)
 button.grid(row=0,column=2)
 mainloop()
