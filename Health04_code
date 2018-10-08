@@ -95,7 +95,7 @@ la1 = Label(root, text="enter your age:", font=("Arial", 15), width=40, height=1
 la1.grid(row=0,column=1)
 entrytext1 = Entry(root)
 entrytext1.grid(row=1,column=1, padx=10, pady=5)
-la2 = Label(root, text="enter your sex:",font=("Arial", 15), width=40, height=1)
+la2 = Label(root, text="enter your gender:",font=("Arial", 15), width=40, height=1)
 la2.grid(row=2,column=1)
 entrytext2 = Entry(root)
 entrytext2.grid(row=3,column=1)
