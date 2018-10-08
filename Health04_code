@@ -129,9 +129,9 @@ def show_recommendation():
     var2 = StringVar()
     l2 = Listbox(root, listvariable=var2, width=40, height=10, font=("Arial", 12))
     l2.grid(row=2, column=2)
-    if(cmp(sex,"woman")):
+    if(cmp(sex,"woman")==0):
         sextype=1
-    elif(cmp(sex,"man")):
+    elif(cmp(sex,"man")==0):
         sextype=0
     if (person_type != 'pregnant'):
         energy_low = food['energy'][person_type][sextype][0]
