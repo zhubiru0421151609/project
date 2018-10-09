@@ -63,32 +63,40 @@ def ocr():
     content = response.read()
     if (content):
         return content
+food_name=["Energy","Fat","Protein","calcium","A","Folic","Iron","Magnesium","Zinc"]
+namelist=[]
 def show_ocr_result():
     result = json.loads(ocr())
     for r in result['prism_wordsInfo']:
         l.insert(END, r['word'])
+        k1=r['word'].find('(')
+        k2=len(r['word'])
+        if(k1!=-1):
+            word=r['word'][k1+1:k2-1]
+            if(word in food_name):
+                namelist.append(word)
 bt = Button(root, text="see words in picture", font=("Arial", 12), command=show_ocr_result)
 bt.grid(row=4, column=0)
 food = {
-    "energy": { "day": "kcal", "child": [[1100, 1350], [1050, 1300]],
+    "Energy": { "day": "kcal", "child": [[1100, 1350], [1050, 1300]],
                "teenager": [[2400, 2900], [2200, 2400]], "adult": [[2400, 3200], [2100, 2700]],
                "elderly": [[1900, 3100], [1800, 2200]], "pregnant": [2300, 2900]},
-    "fat": { "day": "g", "child": [[45, 50], [20, 25]], "teenager": [[70, 75], [45, 50]],
+    "Fat": { "day": "g", "child": [[45, 50], [20, 25]], "teenager": [[70, 75], [45, 50]],
             "adult": [[75, 80], [55, 60]], "elderly": [[55, 60], [50, 55]], "pregnant": [0, 0]},
-    "protein": { "day": "g", "child": [[35, 70], [35, 65]], "teenager": [[75, 85], [75, 80]],
+    "Protein": { "day": "g", "child": [[35, 70], [35, 65]], "teenager": [[75, 85], [75, 80]],
                 "adult": [[75, 90], [65, 80]], "elderly": [[75, 75], [65, 65]], "pregnant": [70, 100]},
-    "calcium": {"day": "mg", "child": [[800, 2000], [800, 2000]],
+    "Calcium": {"day": "mg", "child": [[800, 2000], [800, 2000]],
                 "teenager": [[1000, 2000], [1000, 2000]], "adult": [[800, 2000], [800, 2000]],
                 "elderly": [[1000, 2000], [1000, 2000]], "pregnant": [800, 2000]},
     "A": {"day": "ug", "child": [[500, 2000], [500, 2000]], "teenager": [[800, 2000], [600, 2000]],
           "adult": [[800, 3000], [700, 3000]], "elderly": [[800, 3000], [700, 3000]], "pregnant": [800, 2400]},
-    "folic": {"day": "ug", "child": [[150, 400], [150, 400]], "teenager": [[300, 800], [300, 800]],
+    "Folic": {"day": "ug", "child": [[150, 400], [150, 400]], "teenager": [[300, 800], [300, 800]],
               "adult": [[400, 1000], [400, 1000]], "elderly": [[400, 1000], [400, 1000]], "pregnant": [600, 1000]},
-    "iron": { "day": "mg", "child": [[10, 30], [10, 30]], "teenager": [[16, 50], [13, 50]],
+    "Iron": { "day": "mg", "child": [[10, 30], [10, 30]], "teenager": [[16, 50], [13, 50]],
              "adult": [[15, 15], [20, 20]], "elderly": [[15, 50], [15, 50]], "pregnant": [20, 60]},
-    "magnesium": { "day": "mg", "child": [[150, 500], [150, 500]], "teenager": [[350, 700], [350, 700]],
+    "Magnesium": { "day": "mg", "child": [[150, 500], [150, 500]], "teenager": [[350, 700], [350, 700]],
                   "adult": [[350, 700], [350, 700]], "elderly": [[350, 700], [350, 700]], "pregnant": [400, 700]},
-    "zinc": {"day": "mg", "child": [[12, 28], [12, 28]], "teenager": [[18, 43], [15, 35]],
+    "Zinc": {"day": "mg", "child": [[12, 28], [12, 28]], "teenager": [[18, 43], [15, 35]],
              "adult": [[15, 45], [11.5, 37]], "elderly": [[11.5, 37], [11.5, 37]], "pregnant": [16.5, 35]}
 }
 def show_recommendation():
@@ -112,105 +120,18 @@ def show_recommendation():
         sextype=1
     elif(cmp(sex,"male")==0):
         sextype=0
-    if (person_type != 'pregnant'):
-        energy_low = food['energy'][person_type][sextype][0]
-        energy_high = food['energy'][person_type][sextype][1]
-    else:
-        energy_low = food['energy'][person_type][0]
-        energy_high = food['energy'][person_type][1]
-    a = 'energy range: '
-    b = energy_low
-    c = energy_high
-    d = food['energy']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        fat_low = food['fat'][person_type][sextype][0]
-        fat_high = food['fat'][person_type][sextype][1]
-    else:
-        fat_low = food['fat'][person_type][0]
-        fat_high = food['fat'][person_type][1]
-    a = 'fat range: '
-    b = fat_low
-    c = fat_high
-    d = food['fat']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        protein_low = food['protein'][person_type][sextype][0]
-        protein_high = food['protein'][person_type][sextype][1]
-    else:
-        protein_low = food['protein'][person_type][0]
-        protein_high = food['protein'][person_type][1]
-    a = 'protein range: '
-    b = protein_low
-    c = protein_high
-    d = food['protein']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        calcium_low = food['calcium'][person_type][sextype][0]
-        calcium_high = food['calcium'][person_type][sextype][1]
-    else:
-        calcium_low = food['calcium'][person_type][0]
-        calcium_high = food['calcium'][person_type][1]
-    a = 'calcium range: '
-    b = calcium_low
-    c = calcium_high
-    d = food['calcium']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        A_low = food['A'][person_type][sextype][0]
-        A_high = food['A'][person_type][sextype][1]
-    else:
-        A_low = food['A'][person_type][0]
-        A_high = food['A'][person_type][1]
-    a = 'vitaminA range: '
-    b = A_low
-    c = A_high
-    d = food['A']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        folic_low = food['folic'][person_type][sextype][0]
-        folic_high = food['folic'][person_type][sextype][1]
-    else:
-        folic_low = food['folic'][person_type][0]
-        folic_high = food['folic'][person_type][1]
-    a = 'folic range: '
-    b = folic_low
-    c = folic_high
-    d = food['folic']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        iron_low = food['iron'][person_type][sextype][0]
-        iron_high = food['iron'][person_type][sextype][1]
-    else:
-        iron_low = food['iron'][person_type][0]
-        iron_high = food['iron'][person_type][1]
-    a = 'iron range: '
-    b = iron_low
-    c = iron_high
-    d = food['iron']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        magnesium_low = food['magnesium'][person_type][sextype][0]
-        magnesium_high = food['magnesium'][person_type][sextype][1]
-    else:
-        magnesium_low = food['magnesium'][person_type][0]
-        magnesium_high = food['magnesium'][person_type][1]
-    a = 'magnesium range: '
-    b = magnesium_low
-    c = magnesium_high
-    d = food['magnesium']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
-    if (person_type != 'pregnant'):
-        zinc_low = food['zinc'][person_type][sextype][0]
-        zinc_high = food['zinc'][person_type][sextype][1]
-    else:
-        zinc_low = food['zinc'][person_type][0]
-        zinc_high = food['zinc'][person_type][1]
-    a = 'zinc range: '
-    b = zinc_low
-    c = zinc_high
-    d = food['zinc']['day']
-    l2.insert(END, "%s%d to %d%s" % (a, b, c, d))
+    for name in namelist:
+        if (person_type != 'pregnant'):
+            low = food[name][person_type][sextype][0]
+            high = food[name][person_type][sextype][1]
+        else:
+            low = food[name][person_type][0]
+            high = food[name][person_type][1]
+        a = name
+        b = low
+        c = high
+        d = food[name]['day']
+        l2.insert(END, "%s range :%d to %d%s" % (a, b, c, d))
 button=Button(root,text="see recommendations", font=("Arial", 12),command=show_recommendation)
 button.place(x=600,y=260,anchor=NW)
 mainloop()
