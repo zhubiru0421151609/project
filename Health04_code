@@ -71,7 +71,6 @@ def show_ocr_result():
     for r in result['prism_wordsInfo']:
         l.insert(END, r['word'])
         word=r['word']
-        word.encode("utf-8")
         for foodn in food_cn:
             if(foodn in word):
                 namelist.append(food_name[food_cn.index(foodn)])
