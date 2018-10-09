@@ -63,18 +63,19 @@ def ocr():
     content = response.read()
     if (content):
         return content
-food_name=["Energy","Fat","Protein","calcium","A","Folic","Iron","Magnesium","Zinc"]
+food_name=["Energy","Energy","Fat","Protein","calcium","A","Folic","Iron","Magnesium","Zinc"]
+food_cn=[ u"能量",u"热量",u"脂肪",u"蛋白质",u"钙",u"维生素Ａ",u"叶酸",u"镁",u"锌"]
 namelist=[]
 def show_ocr_result():
     result = json.loads(ocr())
     for r in result['prism_wordsInfo']:
         l.insert(END, r['word'])
-        k1=r['word'].find('(')
-        k2=len(r['word'])
-        if(k1!=-1):
-            word=r['word'][k1+1:k2-1]
-            if(word in food_name):
-                namelist.append(word)
+        word=r['word']
+        word.encode("utf-8")
+        for foodn in food_cn:
+            if(foodn in word):
+                namelist.append(food_name[food_cn.index(foodn)])
+                break
 bt = Button(root, text="see words in picture", font=("Arial", 12), command=show_ocr_result)
 bt.grid(row=4, column=0)
 food = {
