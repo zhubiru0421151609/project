@@ -71,12 +71,17 @@ def show_ocr_result():
     for r in result['prism_wordsInfo']:
         l.insert(END, r['word'])
         word=r['word']
+        word.encode("utf-8")
         for foodn in food_cn:
             if(foodn in word):
                 namelist.append(food_name[food_cn.index(foodn)])
                 break
 bt = Button(root, text="see words in picture", font=("Arial", 12), command=show_ocr_result)
 bt.grid(row=4, column=0)
+def clear():
+    l.delete(0,END)
+bt2=Button(root,text="clear",font=("Arial", 12), command=clear)
+bt2.place(x=200,y=530,anchor=NW)
 food = {
     "Energy": { "day": "kcal", "child": [[1100, 1350], [1050, 1300]],
                "teenager": [[2400, 2900], [2200, 2400]], "adult": [[2400, 3200], [2100, 2700]],
