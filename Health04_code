@@ -36,10 +36,10 @@ r3.place(x=600,y=200,anchor=NW)
 r4=Radiobutton(root,text='no',font=("Arial", 12),variable=var2,value='no')
 r4.place(x=600,y=230,anchor=NW)
 la4 = Label(root, text='recommended nutrition intake:',font=("Arial", 15), width=40, height=1)
-la4.place(x=505,y=300,anchor=NW)
+la4.place(x=505,y=320,anchor=NW)
 var3 = StringVar()
 l2 = Listbox(root, listvariable=var3, width=40, height=12, font=("Arial", 12))
-l2.place(x=580,y=340,anchor=NW)
+l2.place(x=580,y=360,anchor=NW)
 def ocr():
     IMAGE_PATH = text_input.get()
     f = open(IMAGE_PATH, 'rb')
@@ -139,5 +139,9 @@ def show_recommendation():
         l2.insert(END, "%s range :%d to %d%s" % (a, b, c, d))
 button=Button(root,text="see recommendations", font=("Arial", 12),command=show_recommendation)
 button.place(x=600,y=260,anchor=NW)
+def clear_recommendation():
+    l2.delete(0,END)
+button2=Button(root,text="clear", font=("Arial", 12),command=clear_recommendation)
+button2.place(x=600,y=295,anchor=NW)
 mainloop()
 
